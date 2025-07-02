@@ -19,7 +19,7 @@
 
   <h3 align="center">
     <a href="xxx">Project Page</a>
-    | <a href="xxx">Paper</a> 
+    | <a href="https://arxiv.org/abs/2507.00659">Paper</a> 
     | <a href="xxx">Demo</a>
   </h3>
   <div align="center"></div>
