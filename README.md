@@ -18,7 +18,7 @@
   <h2 align="center">ICCV 2025</h2>
 
   <h3 align="center">
-    <a href="xxx">Project Page</a>
+    <a href="https://pppppsb.github.io/LoD-Locv2/">Project Page</a>
     | <a href="https://arxiv.org/abs/2507.00659">Paper</a> 
     | <a href="xxx">Demo</a>
   </h3>
