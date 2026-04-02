@@ -24,6 +24,11 @@
   </h3>
   <div align="center"></div>
 </p>
+<p align="center">
+    <a href="utils/Intro_new1_01.png"><img src="utils/Intro_new1_01.png" alt="teaser" width="100%"></a>
+    <br>
+    <em>LoD-Loc v2 tackles visual localization w.r.t a scene represented as LoD1.0 3D maps. Given a query image and its pose prior, the method utilizes the wireframe of LoD models to recover the camera pose.</em>
+</p>
 
 
 This repository is an implementation of the paper "LoD-Loc v2: Aerial Visual Localization over Low Level-of-Detail City Models using Explicit Silhouette Alignment".
