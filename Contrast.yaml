@@ -1,0 +1,19 @@
+name: Contrast
+scenes:
+  - Synthesis
+  - inTraj
+split: ./split/UAV_inTraj_test_sample2.json
+loading:
+  train:
+    batch_size:  5
+    num_workers: ${.batch_size}
+    num_sample: 3000 #2000
+  val:
+    batch_size: ${..train.batch_size}
+    num_workers: ${.batch_size}
+    num_sample: 3000
+    if_save: true
+    interval: 1
+resize_image: [448,602] #[448,602] #[224, 294]# 32 43 [560, 700]
+augmentation:
+  image: {apply: True}
