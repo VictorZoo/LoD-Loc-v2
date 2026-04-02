@@ -19,8 +19,8 @@
 
   <h3 align="center">
     <a href="https://pppppsb.github.io/LoD-Locv2/">Project Page</a>
-    | <a href="https://arxiv.org/abs/2507.00659">Paper</a> 
-    | <a href="xxx">Demo</a>
+    | <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhu_LoD-Loc_v2_Aerial_Visual_Localization_over_Low_Level-of-Detail_City_Models_ICCV_2025_paper.pdf">Paper</a> 
+    | <a href="https://pppppsb.github.io/LoD-Locv2/">Demo</a>
   </h3>
   <div align="center"></div>
 </p>
@@ -28,5 +28,39 @@
 
 This repository is an implementation of the paper "LoD-Loc v2: Aerial Visual Localization over Low Level-of-Detail City Models using Explicit Silhouette Alignment".
 
+## Important Things
 
-### Coming Soon...
+We highly appreciate the research community's interest in the LoD-Loc v2 project. Please note that the **OSG rendering technique** described in the paper involves project intellectual property constraints. Consequently, we have implemented a **Blender-based** rendering pipeline as a substitute in this codebase.
+
+## Segmentation
+
+We adopt the segmentation paradigm of [SAM2-Unet](https://github.com/WZH0120/SAM2-UNet) for our semantic segmentation task. For detailed pipeline specifications, please refer to the original SAM2-Unet paper.
+
+
+## Test
+```bash
+CUDA_VISIBLE_DEVICES="0" \
+python refine_pose_origin.py \
+--render_config "./config/config_RealTime_render_1.json" \
+--sampler "rand_yaw_or_pitch" \
+--name "inTraj" \
+--pose_prior "/home/ubuntu/code/mcloc_poseref/data/UAVD4L-LoD/inTraj/inPlace_gps_newAll.txt"
+```
+
+## Acknowledgement
+LoD-Loc v2 takes the [MC-Loc](https://github.com/ga1i13o/mcloc_poseref) as its code backbone. Thanks to Gabriele Trivigno for the opening source of his excellent work and his PyTorch implementation.
+
+
+## BibTex citation
+
+Please consider citing our work if you use any code from this repo or ideas presented in the paper:
+```
+@InProceedings{Zhu_2025_ICCV,
+    author    = {Zhu, Juelin and Peng, Shuaibang and Wang, Long and Tan, Hanlin and Liu, Yu and Zhang, Maojun and Yan, Shen},
+    title     = {LoD-Loc v2: Aerial Visual Localization over Low Level-of-Detail City Models using Explicit Silhouette Alignment},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {26610-26621}
+}
+```
