@@ -45,7 +45,7 @@ We adopt the segmentation paradigm of [SAM2-Unet](https://github.com/WZH0120/SAM
 ## Test
 ```bash
 CUDA_VISIBLE_DEVICES="0" \
-python refine_pose_origin.py \
+python ./script/refine_pose_origin.py \
 --render_config "./config/config_RealTime_render_1.json" \
 --sampler "rand_yaw_or_pitch" \
 --name "inTraj" \
