@@ -1,0 +1,65 @@
+{
+    "render2loc": {
+        "dev": "phone",
+        "engine": "osg",
+        "model_ckpt": "./weights/outdoor_ds.ckpt",
+        "render_images": "images/render_upright/",
+        "datasets": "/home/ubuntu/code/render2loc/temp/loca_results/",
+        "query_camera": [
+            1920,
+            1080,
+            100000,
+            100000,
+            960,
+            540
+        ],
+        "render_camera_out": [
+            602,
+            448,
+            430.79748,
+            426.64093,
+            303.69349,
+            217.400193
+        ],
+        "render_camera": [
+            602,
+            448,
+            420.8795008311375,
+            417.7121556332237,
+            301.2592948496361,
+            224.22871799799827
+        ],
+        "render_camera_in_mm": [
+            602,
+            448,
+            6.29,
+            4.71,
+            4.5,
+            56.40526, 
+            1.34375
+        ],
+        "distortion": [
+            0.293656243361741,
+            -1.13028438807054,
+            0.000113131446409535,
+            5.29911015250079e-05,
+            1.24340747827876
+        ],
+        "results": "",
+        "osg": {
+            "model_path_3Dtile": "/v1/3dtiles/datasets/CgA/files/tileset.json",
+            "model_path": "/v1/3dtiles/datasets/CgA/files/move22.obj",
+            "model_path_": "/v1/3dtiles/datasets/CgA/files/UAVD4L-LoD.obj",
+            "init_rot": [
+                0,
+                0,
+                0
+            ],
+            "init_trans": [
+                0,
+                0,
+                0
+            ]
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "render2loc": {
+        "dev": "phone",
+        "engine": "osg",
+        "model_ckpt": "./weights/outdoor_ds.ckpt",
+        "render_images": "images/render_upright/",
+        "datasets": "/home/ubuntu/code/render2loc/temp/loca_results/",
+        "query_camera": [
+            1920,
+            1080,
+            100000,
+            100000,
+            960,
+            540
+        ],
+        "render_camera": [
+            720,
+            480,
+            480,
+            480,
+            360,
+            240
+        ],
+        "render_camera_half": [
+            720,
+            480,
+            480,
+            480,
+            360,
+            240
+        ],
+        "render_camera_out": [
+            602,
+            448,
+            430.79748,
+            426.64093,
+            303.69349,
+            217.400193
+        ],
+        "render_camera_in": [
+            602,
+            448,
+            6.29,
+            4.71,
+            4.5,
+            56.40526, 
+            1.34375
+        ],
+        "distortion": [
+            0.293656243361741,
+            -1.13028438807054,
+            0.000113131446409535,
+            5.29911015250079e-05,
+            1.24340747827876
+        ],
+        "results": "",
+        "osg": {
+            "model_path_3Dtile": "/v1/3dtiles/datasets/CgA/files/tileset.json",
+            "model_path": "/v1/3dtiles/datasets/CgA/files/swiss_LoD1_final.obj",
+            "model_path_": "/v1/3dtiles/datasets/CgA/files/UAVD4L-LoD.obj",
+            "init_rot": [
+                0,
+                0,
+                0
+            ],
+            "init_trans": [
+                0,
+                0,
+                0
+            ]
+        }
+    }
+}
